@@ -23730,9 +23730,9 @@
     "restore": {
       "projectUniqueName": "Task 1",
       "projectName": "Task 1",
-      "projectPath": "D:\\Mai\\iti\\RPA\\Task1 - get weather info\\.local",
+      "projectPath": "D:\\Mai\\iti\\RPA\\Task1\\.local",
       "packagesPath": "C:\\Users\\hebam\\.nuget\\packages\\",
-      "outputPath": "D:\\Mai\\iti\\RPA\\Task1 - get weather info\\.local",
+      "outputPath": "D:\\Mai\\iti\\RPA\\Task1\\.local",
       "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
