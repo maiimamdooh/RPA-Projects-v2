@@ -1,9 +1,11 @@
 
-## Weather Data Automation – UiPath Project
-This UiPath automation project that:
-- Takes a country name as input from the user.
-- Searches for the current weather information on the web.
-- Saves the result into a Notepad file.
-  - The saved file is automatically named with the country name and the current date and time.
+## 🌐 UiPath Assistant – Weather & Movie Info Automation
 
+This UiPath project allows the user to choose between two smart assistant robots:
+
+- ✅ Weather Assistant:
+     - Takes a country name → searches for weather on web → writes results in Notepad → saves the file automatically.
+  
+- ✅ Movie Assistant:
+    - Takes a movie name → searches the movie on IMDb → extracts details like Year, Rating, Genre, Description → saves them into Notepad.
 
