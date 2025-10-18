@@ -1,0 +1,14 @@
+﻿{
+  "Name": "button Notepad pinned",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "-LdaVO4qX0-j4mVNtXdyfQ",
+  "Reference": "gQaqVwIeskyvDWyfTMfcNA/-LdaVO4qX0-j4mVNtXdyfQ",
+  "ParentRef": "gQaqVwIeskyvDWyfTMfcNA/_3GoX-8Z10K4EQFFAL_q4Q",
+  "Created": "2025-10-17T15:03:29.0696511Z",
+  "Updated": "2025-10-17T15:03:29.0696511Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

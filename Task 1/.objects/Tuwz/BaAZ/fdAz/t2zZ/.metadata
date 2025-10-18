@@ -1,0 +1,14 @@
+﻿{
+  "Name": "File",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "t2zZ7076QUeZoznWmT8uuw",
+  "Reference": "gQaqVwIeskyvDWyfTMfcNA/t2zZ7076QUeZoznWmT8uuw",
+  "ParentRef": "gQaqVwIeskyvDWyfTMfcNA/fdAzZUkB-EWKfh5M1DOEow",
+  "Created": "2025-10-17T16:30:27.5130561Z",
+  "Updated": "2025-10-17T16:30:27.5130561Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

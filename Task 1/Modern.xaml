@@ -1,0 +1,308 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence1" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Sequence1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence1" sap:VirtualizedContainerService.HintSize="1359,3791" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Day" />
+      <Variable x:TypeArguments="x:String" Name="Humidity" />
+      <Variable x:TypeArguments="x:String" Name="Weather" />
+      <Variable x:TypeArguments="x:String" Name="Country" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="654,3768" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Get user country" sap:VirtualizedContainerService.HintSize="620,275" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter a country:" Title="Country" TopMost="False">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Country]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Google" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="620,3410" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="669654e6-28d6-4403-904f-7f4fc9b380c8" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="586,3169" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Search" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="552,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="669654e6-28d6-4403-904f-7f4fc9b380c8" Text="[Country + &quot;Temprature&quot;]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="google.com" CVScreenId="9bb6a060-f6e9-422a-979a-439b774ac0c6" ContentHash="lQswiEemi0-m5w0lUm7naw" DesignTimeRectangle="159, 550, 440, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='APjFqb' tag='TEXTAREA' /&gt;" Guid="33738bf0-b222-4802-a027-5f34b5388d6e" InformativeScreenshot="8a5ac8690cf8507919d5a2da3c9fd051.png" Reference="gQaqVwIeskyvDWyfTMfcNA/75r1s2hUsk62NsFgySZ2ng" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click search btn" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="552,227" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="669654e6-28d6-4403-904f-7f4fc9b380c8" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="google.com" CVScreenId="62a43f09-dd08-4ffb-b381-a8b8044a789e" ContentHash="A1qA545E-UWf9Cv0MZyhJw" DesignTimeRectangle="315, 630, 127, 36" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='button' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;center&amp;gt;input' tag='INPUT' /&gt;" Guid="071af43c-9dae-44b1-add5-b7db738c0dfe" InformativeScreenshot="a4c6de1dc0ae45140dc8a89bbe3b011c.png" Reference="gQaqVwIeskyvDWyfTMfcNA/3cyKSEvcCUCgSHUxIupdeQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Day" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="552,143" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="669654e6-28d6-4403-904f-7f4fc9b380c8" TextString="[Day]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="google.com/search" CVScreenId="621ec632-c288-4bb9-a6c2-2ae7485f3843" ContentHash="9oTw7GFYP0icSGOo7ka5GQ" CvType="AnyWordGroup" DesignTimeRectangle="362, 423, 326, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='wob_dts' tag='DIV' /&gt;" Guid="425395da-43b2-4404-8515-4fe63aa46432" InformativeScreenshot="fe691f49e52e4b5a6cfcef5f309a02bc.png" Reference="gQaqVwIeskyvDWyfTMfcNA/7SWfNUxICEepZvAKUmzATA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='mansoura temperature today - Google Search' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Humidity" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="552,143" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="669654e6-28d6-4403-904f-7f4fc9b380c8" TextString="[Humidity]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="google.com/search" CVScreenId="621ec632-c288-4bb9-a6c2-2ae7485f3843" ContentHash="pahmTxSOWkKsEGrO5oNrng" CvType="AnyWordGroup" DesignTimeRectangle="273, 420, 24, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='wob_hm' tag='SPAN' /&gt;" Guid="7529d83f-12c1-4ead-ad29-cd48c7646aff" InformativeScreenshot="902ea1ec2dd67adaccf2e0291ee7794e.png" Reference="gQaqVwIeskyvDWyfTMfcNA/zDC-3oTzVUe2HX7eYuobIA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='mansoura temperature today - Google Search' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="621ec632-c288-4bb9-a6c2-2ae7485f3843" DesignTimeRectangle="220, 419, 90, 16" FuzzySelectorArgument="&lt;webctrl aaname='Humidity: ' parentid='wob_wc' tag='DIV' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Humidity: 56%' /&gt;" Guid="a075fe02-402f-4127-9ef1-3fae83d6f151" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Weather Status" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="552,143" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="669654e6-28d6-4403-904f-7f4fc9b380c8" TextString="[Weather]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="google.com/search" CVScreenId="8eb734b3-dc14-40da-9eb6-f9ab36134570" ContentHash="spdDHDXXB0mKcyXekWKRMg" CvType="AnyWordGroup" DesignTimeRectangle="643, 444, 45, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' type='' class='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ce20a264-1b7e-4d7f-9460-530f080d95fd" InformativeScreenshot="973c2649dca0dc5e34d223fd69a31a47.png" Reference="gQaqVwIeskyvDWyfTMfcNA/LS0Gl1FHckmEZWIMeaF44Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='mansoura temperature today - Google Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="8eb734b3-dc14-40da-9eb6-f9ab36134570" CvTextArea="602, 399, 87, 19" CvTextArgument="Weather" CvType="Text" DesignTimeRectangle="362, 397, 326, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='wob_loc' tag='DIV' type='' class='wob_loc q8U8x' aaname='Weather' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Weather' /&gt;" Guid="27ba1837-ebb2-47ae-83cb-05c466daa946" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="552,177" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <VisualBasicValue x:TypeArguments="x:Object" ExpressionText="Day" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="552,177" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[Humidity]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="552,177" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[Weather]" />
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="OPen notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="552,1632" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" ScopeGuid="413da3c4-4600-4192-b92e-e235a9df0709" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,1338" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into" EmptyFieldMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,259" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="413da3c4-4600-4192-b92e-e235a9df0709" Text="[Country+ Day +Humidity+Weather]" Version="V5" />
+                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Save" sap:VirtualizedContainerService.HintSize="484,190" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="s">
+                        <ui:SendHotkey.KeyModifiers>
+                          <InArgument x:TypeArguments="ui:KeyModifiers">
+                            <Literal x:TypeArguments="ui:KeyModifiers" sap2010:WorkflowViewState.IdRef="Literal`1_1" Value="Ctrl" />
+                          </InArgument>
+                        </ui:SendHotkey.KeyModifiers>
+                        <ui:SendHotkey.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3e931db9-c7b3-4356-9f31-d06f2544ff9d" InformativeScreenshot="4cd2ad0892484b597f8f7887ade0c152" Selector="&lt;wnd cls='RichEditD2DPT' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:SendHotkey.Target>
+                      </ui:SendHotkey>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Save as" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,827" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" ScopeGuid="0d8313c0-a590-4ff2-97d0-7f35e137bd34" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,533" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'File name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,251" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="Simulate" ScopeIdentifier="0d8313c0-a590-4ff2-97d0-7f35e137bd34" Text="[Path.Combine(Environment.CurrentDirectory, &quot;MyNote_&quot; + DateTime.Now.ToString(&quot;yyyy-MM-dd_HH-mm-ss&quot;) + &quot;.txt&quot;)]" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable CVScreenId="e5e4875f-671b-4fc6-9032-5268a59ffd4c" ContentHash="pFQ77S90hUy3cxDOD591VQ" CvElementArea="130, 359, 815, 24" CvType="InputBox" DesignTimeRectangle="136, 363, 791, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd ctrlid='1001' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="ad2df471-26c8-4e76-80f8-e881bf3703b6" InformativeScreenshot="9643672d1ee135d87716217878e6880a.png" IsResponsive="True" Reference="gQaqVwIeskyvDWyfTMfcNA/JkkJiN-QEUO69vKNw1AgjQ" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Save as' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="e5e4875f-671b-4fc6-9032-5268a59ffd4c" DesignTimeRectangle="18, 360, 115, 23" ElementType="Text" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;ctrl name='Explorer Pane' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Details Pane' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='File name:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='File name:' /&gt;" Guid="e3c0aa04-453f-4c52-9952-7becb75d0505" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0d8313c0-a590-4ff2-97d0-7f35e137bd34" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="231b21e1-4466-4649-a925-5253735ed025" ContentHash="r_TB5oyfZEmJCRvldrbcvw" CvElementArea="747, 489, 89, 26" CvTextArea="778, 495, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="747, 489, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" Guid="9f146e26-82fe-4262-816c-03a8444553de" InformativeScreenshot="4fb33242d3bc4d63c669d0e22a5ea344.png" Reference="gQaqVwIeskyvDWyfTMfcNA/igiQ7oPKh0CrusDLMc3F5g" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Save as' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                                    <uix:TargetAnchorable.WaitForReadyArgument>
+                                      <InArgument x:TypeArguments="uix:NWaitForReady">
+                                        <Literal x:TypeArguments="uix:NWaitForReady" sap2010:WorkflowViewState.IdRef="Literal`1_2" Value="Interactive" />
+                                      </InArgument>
+                                    </uix:TargetAnchorable.WaitForReadyArgument>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="177, 239, 960, 540" ContentHash="iv5l9gb2gkKlU2jDjt_dbA" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAImSURBVDhPhY9LU1JhHIfZsHD0CzndKANFCbRSkzDNLlRmUhbZNNMnKBex0W2p4XVAkVAxCLkLcueIyU3CuIPWjMtfw2FceN7G3pnfzNk8z3n+LBbjsWWKClumkJ31/c83ZEsev4v8QYN8As2zdoyGDtEgH8dVpRUjviLq5ePgTJkx5M5BoqeOmTxr0J7GW+oIb8KHeB2s4FWgjBF/Cc+9BQx78ni2ncNTVxZPtjLo0UfA5FlSawqjoQrkgTJe+kt44StCdgK6a+Bj5y9IHWl0rVGk4IElSYNsmeLM3bOmcFMXJgUDpjidK1ryQqj2QqDyQKDaRuuiG/wFF5oXXODNbaHfnES7NkgK+oyxU3c+ch7goT2N+7af9F/vmvfRt5lArykOocZPCiSGPRpkJjMnNkTRtuQjBWL9LqSOA7RUc+eruU5w5xxomnHgyowdHKUNl6at6Nr4Ab7KQwq613fo3AFLCv3mfdzZTEDyPY7bxhh6DFF0b+yhU7+LG+sRcBfdpKBzlaLvZCYz166j0DTvIgUd2hB6TYla7pda7sVpC85PWnBu0ozGzyY0fjLhmjYEzqyTFIg0AYiNMdz6FqXvpHPXIuhY3YFIR9Fg20oQfE0AF5R2UnBd7T51ZxWs5gq/hiFYCaJVE0DLsh88tQ+Xp0ykQP9xGOVyGaVSCcVikV6hUEA+n0cul6OXzWaRyWSw/H6QFEwI6o/GeHX4wP3/xnh1v0+4v1PA/LAfJHkBAAAAAElFTkSuQmCC" InformativeScreenshot="99d938be0c3e4de57449cb0652e89487.png" Reference="gQaqVwIeskyvDWyfTMfcNA/Q7rroNpockGf13BjI4FoHw" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Save as' /&gt;" Version="V2" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="104, 219, 899, 709" ContentHash="MN6eJg5ztEuac8tqsc4lkQ" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPPSURBVFhHrZTHUxRBGMW9WCL75xiqvBoQBMGcUQxIEBQVMCL+DxzAKr14MhVIUFAMBAGJG2d3ZxcUYfMuSeH8rO6Z7p2A24swVa+mqg/ze9978/WmTSmezVUNRZurGkDeG3G25kf9ANVGnKX11PtWiup9K3gkL/MPEN33/MY995LurNa5gBrnvO7spi2BKmtcd1YxHsW1sQjKRyPiNB7JK6iTl1Hn/YOCViv9QP7bCdyTlnBXWkRe8zg9y20eQ7VjHrcdc8h5M0rPsl+P4IY1jusTMWS9GqZn+14OEzDKR8MoGwmL06jzLuOh9w8eeH7jvluZ+q60hDuuRdS6yMQLKnget+xzysS2BAXfmFDgleNRVIzxqSm4dCSEkuGQ2IAJLBHwIgdTuH0Ot2wqnIDVqSvHY6uAwxR89XuQysgzPQTM4qZTqz1zMJvaCE72zOMuHSZTK+DioQCuDAXEBvRgFrcWrMStBxumpmBl6uKhIAVfHpzFpYFZsYFUPdOp0+iZgr9rwBQ+g4vfZsQGdHHb5mCpbdKt1FpkqWni4KJvv3Ch/5fYgL7nxLoMZNY0cfD5/mkU9k2LDWjXStuzKe5/9Tw4i4sDZOIZDj7fN43C3p841/tTbOB/e1Z+Mm3cKrhPAZ/t+YEzPVNiA6utFdtn01oNsr9b3zOLOwn+gdNfp3DqSxoG2FqxfSY/krHbdJVZ04gzX6dU+CROfvaLDRjjXq8BBTyJE5/9OP7JJzZgvD5JzynjNvXM4p7EyS8MrMCPdctiA6ae+S2Woudefc8ETOJmUx/r9uHoRxlHPnrFBkxrNWBeKwbmU+t6TsZNwd0ELOPwBy8OffCIDRj3mVwmxm7TVWZ1I52awrs8KOh0iw0Y416Pga3VjQq4y438TjcOvpfEBpS4xT2ztTLHrZm4y6OAOyXkvZeQ+84lNqAFs+tzrT0TMImbTZ33zkXhBzqcYgPmtdKA+VopYLJW7O9OTq0FK1MTcE6HE9ntDrEB8z4ra6Xf5+RameImYDXuAx0uDt7f5kBWm11sgIG116c57lXAmp751O0OZLcRuB1ZrXbsa7WJDaTbM1ur1XrOaWdTJ8F739qwp8UqNtAsTZuuT3PcqXtmcWvBu1useD6axkXk9/tB5PP5qGRZNsnr9XJ5PB4ut9vNJUkSlcvl4nI609iCF4+LkEgkqOLxOFUsFuOKRqNUkUiEKxwOc4VCIa5gMEgVCASoXtQXig1c35mB8u1bUKqqZNv6RL5Rtn0LKnZk4PauDLGBZ/mWkid5mWjK3TiR7z09aMHzQ5ZiI+8vgOYUr08dsXUAAAAASUVORK5CYII=" InformativeScreenshot="eff6cf75f0e053d5eccfe7f89b16dedd.png" Reference="gQaqVwIeskyvDWyfTMfcNA/fdAzZUkB-EWKfh5M1DOEow" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="1017, 0, 910, 1087" BrowserType="Chrome" ContentHash="xKuhK6aWx0isAdr1u27RyQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAATcSURBVFhHxZd5bJNlHMcZTNdjZbJANhBPMiMOs5GIRkKUQ3YwHOeYIoFxT6IyIUaNSPiHcSxqFGQoiAuwGFBgU45sXXeUsTlGO3RAWIIwyCJBjTsowrb2/ZjnrX3XPm83SsDwSb5/tP09v9+3z/30A/qFqERgHVBJ74jfRIyIldsHle6LIMoCTsuVQkC0EW3lfCEbePw2/zZURA6RS87fp4HpQJuc6S4QuUROuU5QA6LbgnPiOGzeAPMyIWk8TBaaCJMnwbw3UPI2o9TUyq380Q2JXFy41NPogEWzIG2ct3DyeEia4C2eNBmSUiA5DSU1Hc+UGbgXrUD59YycxUdAT/gXF+Ok7/b9G2Duc5A+1qsUYWACJInikyA5GVLSIHUaSup0PFMzcKfPVeXZsVvOJhA1tDnhb0A/4Qrfh+x4r4HZL9zewJSZgQZWfgCuG3JWgagVYEA/7iVvQ+5wWPMEZD8LC0ZD5hjvMKS+BEkvew2kJKOkiu6fhidtlmagj+I+1PngMxC4zq8Vwz4L5A2DLbGwJg4WJ8LSBHhzBliPgut6T7zLBVYbnqxleKbOCaW4QNRUDYhdK5CqOK+BXdE9BnKegV1rAgvLuFwohftDKe4jURgQW2cPf/8ItQawmeBIJByIgq+HwHfLA8LuEev0k+/iUmgwQb0Jys1QaoZDw6FTv0DuAZXCQCDnRvYYqDXBcROce0+O0qi/3Iua4VSzosnR7OFqqyI3VydgAEqDAeW0CRrM4DSDwwztdjlMIzG3F61XdNpuD8lABIrogdMW1YDSEAmdzXKYhq5wMAkDuYRmwON8QDMgiqvqvCyHaeiK9aH8IB2pN+AYgOJ8ELfTSKfTyD9OA10dVXKYhkickOshIdf9nzwk5op/7NOdGmgcgdsRTtupcFyOCK7Uh/PnlVVymEa+XSHf7vGT+KyQ+mXoBgKWYfelLG6d6q8auFYfrhpwOgbT7W71D+uTjpsw7hN9L4jVIaEuw4CNqKv1EC0nw2isC+OXuv5Yf+7PNzURFJ3P9A/rk89qXDy96QZxeR3Eb7zFqA1dxG/slMME6kak24qdDY9RVNuPY7VhFNaEsf6EkdXV0exsyuF6d4ccHsC2My0M2XaeoVsuEbP1N5789C9GbrrJh0e65FCBuhXrDqP29grVQEFNGJ+fGEBO9UDm22N5tWoEybUz+f5qCW3dLv8mFP9+gVfKj2IoPMDAnSeJ3t6oGYjLa6elTbcEtcNISHccV1zMYW11BCuPRzLd/jATq55iTOVoHrWlEGNLJ9qWgcW6kKHlKzGWvIXh8EcYDmzF8EM+xj2Hify2gugdJ4nZeoG1VUHnT8BxrJuMgr1Ny5hpj+XFqnier0wgrnw8sbbZDLZlMKhsHlFlCzGXZhNZuhzzsVUYD+VhLNqEcd8eLAU2TLtLGHvwrJxWoLuQCAW9kn3R9I5qIKFiTI+Bstc0AxbrEs2A6aePNQPGwoPMqWigrdMtp+z1SiYU9FJa1+pgXM3rDLOlMahsLg+pxRcQVZaFpXQJFutiLCUriDy6GnPxemKKCthyvklO46PXS6lPuvng48gfdWSf/YpR1e8SVTZfNTHQupAoaxaPlOeQ6Shgb0s9bV235KY+bnst9+8J3XDcBXf0MPHpvj7N/HXfHqey/pfn+b9CSGaGdBXBYQAAAABJRU5ErkJggg==" InformativeScreenshot="30db93daa992283a3b7bf4d0496112f6.jpg" Reference="gQaqVwIeskyvDWyfTMfcNA/l_6xcBpjDkqP-r5TXvBNCw" Selector="&lt;html app='chrome.exe' title='Google' /&gt;" Url="https://www.google.com/" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

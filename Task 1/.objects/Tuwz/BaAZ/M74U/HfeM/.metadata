@@ -1,0 +1,14 @@
+﻿{
+  "Name": "ClearFriday 700 PM59%",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "HfeMzixuIkKqLB3MyhOueQ",
+  "Reference": "gQaqVwIeskyvDWyfTMfcNA/HfeMzixuIkKqLB3MyhOueQ",
+  "ParentRef": "gQaqVwIeskyvDWyfTMfcNA/M74UfZu1xk-tjKLE3UdopQ",
+  "Created": "2025-10-17T16:23:51.2104193Z",
+  "Updated": "2025-10-17T16:23:51.2104193Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

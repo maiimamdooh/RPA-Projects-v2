@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ClearFriday 700 PM56%.txt - Notepad",
+  "Type": "Screen",
+  "Id": "1yKWO7Ye4kG2moZcL4qOjQ",
+  "Reference": "gQaqVwIeskyvDWyfTMfcNA/1yKWO7Ye4kG2moZcL4qOjQ",
+  "ParentRef": "gQaqVwIeskyvDWyfTMfcNA/BaAZfVclBkCSOD8hEZQYKQ",
+  "Created": "2025-10-17T16:26:03.4928847Z",
+  "Updated": "2025-10-17T16:26:03.4928847Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

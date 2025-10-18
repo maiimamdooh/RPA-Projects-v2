@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="spdDHDXXB0mKcyXekWKRMg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="google.com/search" CVScreenId="8eb734b3-dc14-40da-9eb6-f9ab36134570" CvType="AnyWordGroup" DesignTimeRectangle="643, 444, 45, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' type='' class='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ce20a264-1b7e-4d7f-9460-530f080d95fd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='mansoura temperature today - Google Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8eb734b3-dc14-40da-9eb6-f9ab36134570" CvTextArea="602, 399, 87, 19" CvTextArgument="Weather" CvType="Text" DesignTimeRectangle="362, 397, 326, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='wob_loc' tag='DIV' type='' class='wob_loc q8U8x' aaname='Weather' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Weather' /&gt;" Guid="27ba1837-ebb2-47ae-83cb-05c466daa946" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="973c2649dca0dc5e34d223fd69a31a47.png" xmlns="">0arFcSgsJ0UGZLX75ZLFuEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

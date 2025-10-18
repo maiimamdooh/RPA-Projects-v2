@@ -1,0 +1,6 @@
+{
+  "Name": "Task 1",
+  "ProjectType": "Process",
+  "Description": "user enter a country , get its weaher then put data in motepad (modern way)",
+  "MainFile": "Main.xaml"
+}
