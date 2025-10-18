@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-_JMe8d-iEao2OOXC_1REg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/title/tt1266652" CVScreenId="9df6b1c2-491d-4a4f-bc7f-34db70da1f57" CvType="AnyWordGroup" DesignTimeRectangle="249, 464, 23, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='SPAN' class='sc-4dc495c1-1 lbQcRY' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="0fcc2193-744a-4d3b-adcd-ccfc41a6b117" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Goodfather (1975) - IMDb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9df6b1c2-491d-4a4f-bc7f-34db70da1f57" CvElementArea="225, 464, 22, 22" CvType="Icon" DesignTimeRectangle="228, 467, 17, 16" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;svg&amp;gt;path' parentid='__next' tag='path' /&gt;" Guid="72c162e7-1a3b-4ca1-87c9-d7fa6075d9ac" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG7SURBVDhPYzAwMPgPwvr6+mCaEN/Q0BCMkeVBfGQ5BmSN+HBcsPb/KH8tuEZ0eZglIJpBT08PzMBHW1vo/X+zT/L/632S/63MdcGasamD0US5tLNY7f/XoxJg3F6oiuJ9ZBqGGbBJIisyMND/f2+LFNzQWxtl/hsaohqCjsEuRQ8jZH5GlCbcQBjOjNGGy4MMQXc5mkv1weHnaq/z398dEjGH5slhGHpwrtz/SD9NsBo3B12wHpBeDJfmxWv+/3QY4U1SMUhvZrQmwqUgXJSojqGQVJwTqwExFDn8ytNArsVUTAiD9JSlasDjAu5SGE4O1/j/dr8khkZcGKQWpAfZDJTYh9Fhvrr/n+4kHL4gNSHe2rhjHz1nbJykgGEIOt4wUQHFhXCXwvIyelp9uE0awxB0DMoU2HyKkk5BrgRhDycdDANwYWc7HUyXIrsOJliagpq8Ph+W+D+rQQmMQWxkueIkdRQfYrgU5tpFbYpwTccWyf7394C4BqQuwEMbLAaTn9esBNcPo+FJCtm1bYWq4IKjNBXTFTBclqoOVtOQo4YhBy9PYQYjpwJ0F6DTuNRhdSk+jOwidDkYBgDi4j2D5wwL3AAAAABJRU5ErkJggg==" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e3d474fbaca95d3163b4d1b917bdf1d9.png" xmlns="">057Ubk7EOFkWwHIzsAwozSA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

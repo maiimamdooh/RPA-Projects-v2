@@ -5,6 +5,21 @@
       "filePath": "Main.xaml",
       "uniqueId": "a4fe7472-c010-4252-8b92-717fec32e9c4",
       "type": "process"
+    },
+    {
+      "filePath": "Move Assistant Modern\\Main.xaml",
+      "uniqueId": "4b7fdaf1-21b5-4ab8-b1a1-e198c6aeca87",
+      "type": "process"
+    },
+    {
+      "filePath": "MovieAssisttant.xaml",
+      "uniqueId": "c544044d-2015-4fdf-b9ec-5c2b0c7c0f04",
+      "type": "process"
+    },
+    {
+      "filePath": "Temp Assistant modern flow\\Main.xaml",
+      "uniqueId": "a1064ada-dec0-4393-877f-2240e276b26d",
+      "type": "process"
     }
   ]
 }

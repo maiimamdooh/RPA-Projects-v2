@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sVc8ywFyAs4=",
+  "dgSpecHash": "r2BKU2eIBJ0=",
   "success": true,
-  "projectFilePath": "D:\\Mai\\iti\\RPA\\Task 1\\.local\\",
+  "projectFilePath": "D:\\Mai\\iti\\RPA\\Task1 - get weather info\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\hebam\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\hebam\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
@@ -304,9 +304,9 @@
     "C:\\Users\\hebam\\.nuget\\packages\\uipath.officelibs\\1.0.0\\uipath.officelibs.1.0.0.nupkg.sha512",
     "C:\\Users\\hebam\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.5.26\\uipath.opentelemetry.contracts.2.5.26.nupkg.sha512",
     "C:\\Users\\hebam\\.nuget\\packages\\uipath.platform\\25.10.1\\uipath.platform.25.10.1.nupkg.sha512",
-    "C:\\Users\\hebam\\.nuget\\packages\\uipath.system.activities\\25.10.0\\uipath.system.activities.25.10.0.nupkg.sha512",
-    "C:\\Users\\hebam\\.nuget\\packages\\uipath.system.activities.runtime\\25.10.0\\uipath.system.activities.runtime.25.10.0.nupkg.sha512",
-    "C:\\Users\\hebam\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.10.0\\uipath.system.activities.runtime.windows.25.10.0.nupkg.sha512",
+    "C:\\Users\\hebam\\.nuget\\packages\\uipath.system.activities\\25.10.2\\uipath.system.activities.25.10.2.nupkg.sha512",
+    "C:\\Users\\hebam\\.nuget\\packages\\uipath.system.activities.runtime\\25.10.2\\uipath.system.activities.runtime.25.10.2.nupkg.sha512",
+    "C:\\Users\\hebam\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.10.2\\uipath.system.activities.runtime.windows.25.10.2.nupkg.sha512",
     "C:\\Users\\hebam\\.nuget\\packages\\uipath.telemetry.client\\2.5.26\\uipath.telemetry.client.2.5.26.nupkg.sha512",
     "C:\\Users\\hebam\\.nuget\\packages\\uipath.testing.activities\\25.10.0\\uipath.testing.activities.25.10.0.nupkg.sha512",
     "C:\\Users\\hebam\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.16\\uipath.uiautomation.activities.25.10.16.nupkg.sha512",

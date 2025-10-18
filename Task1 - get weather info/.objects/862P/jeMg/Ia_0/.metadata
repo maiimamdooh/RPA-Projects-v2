@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome imdb - Google Search",
+  "Type": "Screen",
+  "Id": "Ia_0EPDdPkK0ostk7QVBZg",
+  "Reference": "gQaqVwIeskyvDWyfTMfcNA/Ia_0EPDdPkK0ostk7QVBZg",
+  "ParentRef": "gQaqVwIeskyvDWyfTMfcNA/jeMgG8-j-km1tvdOZ4q5Cg",
+  "Created": "2025-10-18T14:32:52.9016249Z",
+  "Updated": "2025-10-18T14:32:52.9016249Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

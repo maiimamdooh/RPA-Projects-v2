@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="r_TB5oyfZEmJCRvldrbcvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="l50uTvOky0mv6Z2TT6MnBA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="231b21e1-4466-4649-a925-5253735ed025" CvElementArea="747, 489, 89, 26" CvTextArea="778, 495, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="747, 489, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" Guid="9f146e26-82fe-4262-816c-03a8444553de" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Save as' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="4fb33242d3bc4d63c669d0e22a5ea344.png" xmlns="">0N2NSF6PEzEaWBO1G_bpVnw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c948d9d8-68bd-41a9-9439-90cf4aee8872" CvElementArea="748, 454, 88, 26" CvTextArea="778, 460, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="747, 454, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" Guid="a791ca8b-1d96-4066-aa1c-c181b9f3f1fc" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Save as' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c3f379eb1bf439af62222288098b071b.png" xmlns="">0BB3M7yNhCUmNqoPpgaMnng</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

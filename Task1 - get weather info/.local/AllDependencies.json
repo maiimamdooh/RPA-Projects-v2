@@ -5387,7 +5387,7 @@
           }
         }
       },
-      "UiPath.System.Activities/25.10.0": {
+      "UiPath.System.Activities/25.10.2": {
         "type": "package",
         "dependencies": {
           "CsvHelper": "33.0.1",
@@ -5407,7 +5407,7 @@
           "System.Management.Automation": "7.2.24",
           "UiPath.CodedWorkflows": "24.10.1",
           "UiPath.Platform": "25.10.1",
-          "UiPath.System.Activities.Runtime": "25.10.0",
+          "UiPath.System.Activities.Runtime": "25.10.2",
           "UiPath.Telemetry.Client": "2.3.3",
           "net.adamec.lib.common.dmn.engine": "1.1.1"
         },
@@ -5460,10 +5460,10 @@
           }
         }
       },
-      "UiPath.System.Activities.Runtime/25.10.0": {
+      "UiPath.System.Activities.Runtime/25.10.2": {
         "type": "package",
         "dependencies": {
-          "UiPath.System.Activities.Runtime.Windows": "25.10.0"
+          "UiPath.System.Activities.Runtime.Windows": "25.10.2"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -5472,7 +5472,7 @@
           "lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll": {}
         }
       },
-      "UiPath.System.Activities.Runtime.Windows/25.10.0": {
+      "UiPath.System.Activities.Runtime.Windows/25.10.2": {
         "type": "package",
         "dependencies": {
           "CsvHelper": "33.0.1",
@@ -11387,7 +11387,7 @@
           }
         }
       },
-      "UiPath.System.Activities/25.10.0": {
+      "UiPath.System.Activities/25.10.2": {
         "type": "package",
         "dependencies": {
           "CsvHelper": "33.0.1",
@@ -11407,7 +11407,7 @@
           "System.Management.Automation": "7.2.24",
           "UiPath.CodedWorkflows": "24.10.1",
           "UiPath.Platform": "25.10.1",
-          "UiPath.System.Activities.Runtime": "25.10.0",
+          "UiPath.System.Activities.Runtime": "25.10.2",
           "UiPath.Telemetry.Client": "2.3.3",
           "net.adamec.lib.common.dmn.engine": "1.1.1"
         },
@@ -11460,10 +11460,10 @@
           }
         }
       },
-      "UiPath.System.Activities.Runtime/25.10.0": {
+      "UiPath.System.Activities.Runtime/25.10.2": {
         "type": "package",
         "dependencies": {
-          "UiPath.System.Activities.Runtime.Windows": "25.10.0"
+          "UiPath.System.Activities.Runtime.Windows": "25.10.2"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -11472,7 +11472,7 @@
           "lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll": {}
         }
       },
-      "UiPath.System.Activities.Runtime.Windows/25.10.0": {
+      "UiPath.System.Activities.Runtime.Windows/25.10.2": {
         "type": "package",
         "dependencies": {
           "CsvHelper": "33.0.1",
@@ -22568,10 +22568,10 @@
         "uipath.platform.nuspec"
       ]
     },
-    "UiPath.System.Activities/25.10.0": {
-      "sha512": "++fNzpSehMOQJyU19h7xGhGGtNU2n2vn8xSbZqSRAeoCZz3+Rsz8Vo2aNYAdR8bPqEacFnDn0urJqixrfTW6DA==",
+    "UiPath.System.Activities/25.10.2": {
+      "sha512": "cbDeogTjxWnQ6GPfZsdEUJP5yxOkjEiswEMrqcNWqomxqh/yaRx4OnEuJBaq9IcEA/oIXxljfZ4+TuUdWpK4PQ==",
       "type": "package",
-      "path": "uipath.system.activities/25.10.0",
+      "path": "uipath.system.activities/25.10.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -22592,27 +22592,27 @@
         "lib/net6.0-windows7.0/zh-TW/UiPath.System.Activities.Design.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.System.Activities.Design.resources.dll",
         "lib/net6.0/UiPath.System.Activities.ViewModels.dll",
-        "uipath.system.activities.25.10.0.nupkg.sha512",
+        "uipath.system.activities.25.10.2.nupkg.sha512",
         "uipath.system.activities.nuspec"
       ]
     },
-    "UiPath.System.Activities.Runtime/25.10.0": {
-      "sha512": "D0P8KkWANAH377kho7JkDDgADN5FwfG3xNZS/85P4p45rKt2ihY+G0gVYjAfCUEPiqKUgH2siDwSQEFcO/cbYA==",
+    "UiPath.System.Activities.Runtime/25.10.2": {
+      "sha512": "ByxV+T3Ii7Q1JNlQ/7WQXA3XAZ6lg9hiEIH3ZRlwH14K06iOECeoD2gFzulpO/ZOD1iBU4EocdzUYayHUgVCTQ==",
       "type": "package",
-      "path": "uipath.system.activities.runtime/25.10.0",
+      "path": "uipath.system.activities.runtime/25.10.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
         "lib/net6.0/UiPath.System.Activities.Package.Runtime.dll",
-        "uipath.system.activities.runtime.25.10.0.nupkg.sha512",
+        "uipath.system.activities.runtime.25.10.2.nupkg.sha512",
         "uipath.system.activities.runtime.nuspec"
       ]
     },
-    "UiPath.System.Activities.Runtime.Windows/25.10.0": {
-      "sha512": "M6gDU4Usjb1jX07ABPbs9unMOcxYCsXE+KAyNjqVyMlfsyGQOdv0jglF1Lu4WVSa1GFW5U1vfwHVLSKDqT/OQQ==",
+    "UiPath.System.Activities.Runtime.Windows/25.10.2": {
+      "sha512": "M4xcxsgRQAH72rdeXsAF/i0dk8I5grm61buekUsg9bbaTK40hkxCpHVaa685uJikOipsAe1oTghYbzeluuogdg==",
       "type": "package",
-      "path": "uipath.system.activities.runtime.windows/25.10.0",
+      "path": "uipath.system.activities.runtime.windows/25.10.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -22651,7 +22651,7 @@
         "lib/net6.0-windows7.0/zh-CN/UiPath.System.Activities.resources.dll",
         "lib/net6.0-windows7.0/zh-TW/UiPath.System.Activities.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.System.Activities.resources.dll",
-        "uipath.system.activities.runtime.windows.25.10.0.nupkg.sha512",
+        "uipath.system.activities.runtime.windows.25.10.2.nupkg.sha512",
         "uipath.system.activities.runtime.windows.nuspec"
       ]
     },
@@ -23717,7 +23717,7 @@
     "net8.0-windows7.0": [
       "UiPath.Excel.Activities >= 3.2.1 <= 3.2.1",
       "UiPath.Mail.Activities >= 2.4.10 <= 2.4.10",
-      "UiPath.System.Activities >= 25.10.0 <= 25.10.0",
+      "UiPath.System.Activities >= 25.10.2 <= 25.10.2",
       "UiPath.Testing.Activities >= 25.10.0 <= 25.10.0",
       "UiPath.UIAutomation.Activities >= 25.10.16 <= 25.10.16"
     ]
@@ -23730,9 +23730,9 @@
     "restore": {
       "projectUniqueName": "Task 1",
       "projectName": "Task 1",
-      "projectPath": "D:\\Mai\\iti\\RPA\\Task 1\\.local",
+      "projectPath": "D:\\Mai\\iti\\RPA\\Task1 - get weather info\\.local",
       "packagesPath": "C:\\Users\\hebam\\.nuget\\packages\\",
-      "outputPath": "D:\\Mai\\iti\\RPA\\Task 1\\.local",
+      "outputPath": "D:\\Mai\\iti\\RPA\\Task1 - get weather info\\.local",
       "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -23757,7 +23757,7 @@
           "UiPath.System.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[25.10.0, 25.10.0]"
+            "version": "[25.10.2, 25.10.2]"
           },
           "UiPath.Testing.Activities": {
             "include": "Runtime",

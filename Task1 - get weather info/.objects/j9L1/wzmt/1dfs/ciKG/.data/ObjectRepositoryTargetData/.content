@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QHM06KRaXESqTwhQ3HcHFA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/title/tt1266652" CVScreenId="2253df44-b7ad-4e89-9bbb-faeb844f4a7b" CvType="AnyWordGroup" DesignTimeRectangle="225, 464, 23, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='SPAN' class='sc-4dc495c1-1 lbQcRY' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="b2e3fd74-9049-41aa-9f19-72ece1ba33c0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Goodfather (1975) - IMDb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2253df44-b7ad-4e89-9bbb-faeb844f4a7b" CvTextArea="223, 467, 51, 16" CvTextArgument="7.2/10" CvType="Text" DesignTimeRectangle="248, 464, 26, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='/10' type='' parentid='__next' tag='SPAN' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='/10' /&gt;" Guid="0919ca84-af39-4b42-a9f7-2a594c79841f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="116f488f0ba0c8a2fe393daa76993885.png" xmlns="">0U9lQ_-29t065ByYVJ96diA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

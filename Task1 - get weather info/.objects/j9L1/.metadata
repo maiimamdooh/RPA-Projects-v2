@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome IMDb Ratings, Reviews, and Where to Watch the Best Movies & TV Shows",
+  "Type": "App",
+  "Id": "j9L17ibGDEqxSQSztqICIg",
+  "Reference": "gQaqVwIeskyvDWyfTMfcNA/j9L17ibGDEqxSQSztqICIg",
+  "Created": "2025-10-18T14:33:37.9697116Z",
+  "Updated": "2025-10-18T14:33:37.9697116Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

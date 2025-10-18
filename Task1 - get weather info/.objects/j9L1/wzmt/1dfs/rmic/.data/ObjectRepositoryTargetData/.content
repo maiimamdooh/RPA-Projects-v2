@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="t5mobJRk1029caZcXIFJUg" Reference="gQaqVwIeskyvDWyfTMfcNA/rmic4tlvjkWTvA2DXt-SiQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="1abd2353-dbcf-42cc-a203-31e1a8393db7" CvElementArea="127, 46, 633, 33" CvType="InputBox" DesignTimeRectangle="165, 51, 555, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='The Goodfather (1975) - IMDb - Google Chrome - Mai (Work)' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="bdff7d6f-79e1-4df9-ab36-ca4fac35bc3b" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='The Goodfather (1975) - IMDb - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6bff0b1f75e561f22479e1fec067840a.png" xmlns="">0zAZm9t2rrkKE0Lg4RjHQqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
