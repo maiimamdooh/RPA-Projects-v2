@@ -9,5 +9,6 @@ This UiPath project allows the user to choose between two smart assistant robots
 - ✅ Movie Assistant:
     - Takes a movie name → searches the movie on IMDb → extracts details like Year, Rating, Genre, Description → saves them into Notepad.
 
-### flow chart
-    ![Flow chart](https://github.com/maiimamdooh/RPA-Projects-v2/blob/master/Task1/workflow.png/mainflowchart.png)
+
+
+    ![flowchart](https://github.com/maiimamdooh/RPA-Projects-v2/blob/master/Task1/workflow.png/mainflowchart.png)
