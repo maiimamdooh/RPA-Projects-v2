@@ -3,7 +3,9 @@
     <x:Property Name="in_movieData" Type="InArgument(x:String)" />
   </x:Members>
   <this:saveToNotePad.in_movieData>
-    <InArgument x:TypeArguments="x:String" />
+    <InArgument x:TypeArguments="x:String">
+      <Literal x:TypeArguments="x:String" Value="" />
+    </InArgument>
   </this:saveToNotePad.in_movieData>
   <VisualBasic.Settings>
     <x:Null />
@@ -115,7 +117,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="saveToNotePad" sap:VirtualizedContainerService.HintSize="479,598.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="saveToNotePad" sap:VirtualizedContainerService.HintSize="1223,595.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>

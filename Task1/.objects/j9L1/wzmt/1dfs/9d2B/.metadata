@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Writers",
+  "Type": "Element",
+  "Id": "9d2BZCW_0keC1h09RJe3_w",
+  "Reference": "gQaqVwIeskyvDWyfTMfcNA/9d2BZCW_0keC1h09RJe3_w",
+  "ParentRef": "gQaqVwIeskyvDWyfTMfcNA/1dfsyhiAskqoJfuBAqv7zw",
+  "Created": "2025-10-19T15:39:57.9255478Z",
+  "Updated": "2025-10-19T15:39:57.9255478Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

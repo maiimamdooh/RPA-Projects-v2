@@ -1,10 +1,15 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="searchForMovieOnIMDB" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="searchForMovieOnIMDB" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_movieName" Type="InArgument(x:String)" />
     <x:Property Name="out_rate" Type="OutArgument(x:String)" />
     <x:Property Name="out_link" Type="OutArgument(x:String)" />
     <x:Property Name="out_year" Type="OutArgument(x:String)" />
-    <x:Property Name="out_movieData" Type="OutArgument(x:String)" />
+    <x:Property Name="out_movieData" Type="OutArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="out_writers" Type="OutArgument(x:String)" />
+    <x:Property Name="writer" Type="OutArgument(x:String)" />
+    <x:Property Name="out_dictMovieInfo" Type="OutArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="out_secName" Type="OutArgument(x:String)" />
+    <x:Property Name="out_firstName" Type="OutArgument(x:String)" />
   </x:Members>
   <this:searchForMovieOnIMDB.in_movieName>
     <InArgument x:TypeArguments="x:String" />
@@ -52,6 +57,8 @@
       <x:String>System.Reflection</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -111,44 +118,57 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="searchForMovieOnIMDB" sap:VirtualizedContainerService.HintSize="563,1484" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="searchForMovieOnIMDB" sap:VirtualizedContainerService.HintSize="1452,2817" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="518,1461" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <Sequence sap:VirtualizedContainerService.HintSize="580,2794" sap2010:WorkflowViewState.IdRef="Sequence_11">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="s:String[]" Name="arrWriters" />
+      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Find - IMDb(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1378" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="950064f7-d617-4d82-83b3-76e77fa0119e" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Find - IMDb(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="546,2711" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="950064f7-d617-4d82-83b3-76e77fa0119e" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1137" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,2470" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Int32" Name="secNameIndex" />
+                <Variable x:TypeArguments="x:String" Name="strMovieData" />
+              </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'All'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,251" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" Text="[in_movieName +&quot;[K(enter)]&quot;]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'All'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,251" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" Text="[in_movieName +&quot;[K(enter)]&quot;]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="imdb.com" CVScreenId="15270aae-1f25-4697-9424-cdb8ed6d6e8e" ContentHash="boWt_yZJnUeh5kXGmq7lLw" CvElementArea="168, 183, 399, 34" CvType="InputBox" DesignTimeRectangle="211, 185, 300, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='suggestion-search' tag='INPUT' type='text' class='imdb-header-search__input searchTypeahead__input react-autosuggest__input' placeholder='Search IMDb' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="45b7c017-a8e5-44d9-a52b-ec36b55e0f85" InformativeScreenshot="f213137b995db9ce3959a324b73ec3c3.png" IsResponsive="True" Reference="gQaqVwIeskyvDWyfTMfcNA/nMsSZJfcBE-cwFzbWYiR9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="164, 191, 18, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='ipc-btn__text' parentid='nav-search-form' tag='SPAN' type='' aaname='All' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='All' /&gt;" Guid="29ffcd6c-ccfa-4f6e-9ab1-a7332603b5cb" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
                   </uix:TargetAnchorable>
                 </uix:NTypeInto.Target>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'The Goodfather'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'The Goodfather'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,227" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="imdb.com/find" CVScreenId="8c08bcb5-2287-47d6-b099-5f0534ff0ab4" ContentHash="DH3DTozgwE2pmEEBMQxEpA" CvTextArea="88, 415, 118, 15" CvTextArgument="The Goodfather" CvType="Text" DesignTimeRectangle="90, 415, 653, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='ipc-metadata-list-summary-item__t' parentid='__next' tag='A' /&gt;" Guid="974ae6c5-1e01-4e77-a58a-957a9b6a1427" InformativeScreenshot="e29435ef9fcacdcd23a97ae689340ba1.png" Reference="gQaqVwIeskyvDWyfTMfcNA/RqTn7UOiDUqGidnL-fFpiA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Find - IMDb' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
@@ -163,38 +183,133 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NGetText DisplayName="Get Text 'rate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" TextString="[out_rate]" Version="V5">
+              <uix:NGetText DisplayName="Get Text 'rate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,143" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" TextString="[out_rate]" Version="V5">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="imdb.com/title/tt1266652" CVScreenId="2253df44-b7ad-4e89-9bbb-faeb844f4a7b" ContentHash="QHM06KRaXESqTwhQ3HcHFA" CvType="AnyWordGroup" DesignTimeRectangle="225, 464, 23, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='SPAN' class='sc-4dc495c1-1 lbQcRY' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="b2e3fd74-9049-41aa-9f19-72ece1ba33c0" InformativeScreenshot="116f488f0ba0c8a2fe393daa76993885.png" Reference="gQaqVwIeskyvDWyfTMfcNA/ciKG0P1olE2gF3co97QC0w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Goodfather (1975) - IMDb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target CVScreenId="2253df44-b7ad-4e89-9bbb-faeb844f4a7b" CvTextArea="223, 467, 51, 16" CvTextArgument="7.2/10" CvType="Text" DesignTimeRectangle="248, 464, 26, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='/10' type='' parentid='__next' tag='SPAN' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='/10' /&gt;" Guid="0919ca84-af39-4b42-a9f7-2a594c79841f" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
                   </uix:TargetAnchorable>
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="Get Text 'year'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" TextString="[out_year]" Version="V5">
+              <uix:NGetText DisplayName="Get Text 'year'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,143" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" TextString="[out_year]" Version="V5">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="imdb.com/title/tt1266652" CVScreenId="a83f9f10-ba0f-41b3-a27c-4cca0a11dadc" ContentHash="ghp6g3AjvUSwRFxp79io1w" CvType="AnyWordGroup" DesignTimeRectangle="32, 330, 32, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='A' type='' class='ipc-link ipc-link--baseAlt ipc-link--inherit-color' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ee5230a5-7548-4f4d-8a2e-abda845dde2c" InformativeScreenshot="966c8a47d0624962753913391d85b209.png" Reference="gQaqVwIeskyvDWyfTMfcNA/gdMdcQ0hJUqT3WF4DDX1bQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Goodfather (1975) - IMDb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <uix:NGetText DisplayName="Get Text 'link'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" TextString="[out_link]" Version="V5">
+              <uix:NGetText DisplayName="Get Text 'link'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,143" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" TextString="[out_link]" Version="V5">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable CVScreenId="1abd2353-dbcf-42cc-a203-31e1a8393db7" ContentHash="t5mobJRk1029caZcXIFJUg" CvElementArea="127, 46, 633, 33" CvType="InputBox" DesignTimeRectangle="165, 51, 555, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='The Goodfather (1975) - IMDb - Google Chrome - Mai (Work)' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="bdff7d6f-79e1-4df9-ab36-ca4fac35bc3b" InformativeScreenshot="6bff0b1f75e561f22479e1fec067840a.png" Reference="gQaqVwIeskyvDWyfTMfcNA/rmic4tlvjkWTvA2DXt-SiQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='The Goodfather (1975) - IMDb - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <Assign sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <uix:NGetText DisplayName="Get Text 'Writers'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,143" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="950064f7-d617-4d82-83b3-76e77fa0119e" TextString="[out_writers]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="imdb.com/title/tt1266652" CVScreenId="90f9af20-1a89-4545-bf83-f3cc7667e793" ContentHash="xRWwCyqAp0-LXuWkirV8rg" CvType="AnyWordGroup" DesignTimeRectangle="305, 553, 622, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='ipc-metadata-list-item__content-container' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div' idx='2' parentid='__next' tag='DIV' /&gt;" Guid="602f1862-5bf3-45bc-95ac-9b947a2cdde6" InformativeScreenshot="c7f79ca357b515b601d5242b75f725e1.png" Reference="gQaqVwIeskyvDWyfTMfcNA/9d2BZCW_0keC1h09RJe3_w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Goodfather (1975) - IMDb' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="90f9af20-1a89-4545-bf83-f3cc7667e793" CvTextArea="238, 557, 55, 15" CvTextArgument="Writers" CvType="Text" DesignTimeRectangle="240, 554, 65, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Writers' type='' parentid='__next' tag='SPAN' class='ipc-metadata-list-item__label ipc-btn--not-interactable' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Writers' /&gt;" Guid="13fb7e89-f43f-4250-989a-66c8762f4d14" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,177" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[out_writers]" />
+              <Assign sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">[out_movieData]</OutArgument>
+                  <OutArgument x:TypeArguments="s:String[]">[arrWriters]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String" xml:space="preserve">["Name"+" " + in_movieName + Environment.NewLine+
-"Link" +" "+ out_link + Environment.NewLine+
-"Rate" +" "+ out_rate + Environment.NewLine+
-"Year" +" "+ out_year + Environment.NewLine]</InArgument>
+                  <InArgument x:TypeArguments="s:String[]">[System.Text.RegularExpressions.Regex.Split(out_writers, "(?&lt;!^)(?=[A-Z][a-z]+ )")]</InArgument>
                 </Assign.Value>
               </Assign>
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                <ui:MultipleAssign.AssignOperations>
+                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[out_firstName]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[arrWriters(0)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[out_secName]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[arrWriters(1)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                  </scg:List>
+                </ui:MultipleAssign.AssignOperations>
+              </ui:MultipleAssign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,177" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[out_firstName]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,177" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[out_secName]" />
+              <Assign sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[out_movieData]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[New Dictionary(Of String, String)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,297" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                <ui:MultipleAssign.AssignOperations>
+                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[out_movieData("Name")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[in_movieName]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[out_movieData("Link")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[out_link]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[out_movieData("Rate")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[out_rate]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[out_movieData("Year")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[out_year]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[out_movieData("FirstName")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[out_firstName]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[out_movieData("SecName")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[out_secName]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                  </scg:List>
+                </ui:MultipleAssign.AssignOperations>
+              </ui:MultipleAssign>
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
