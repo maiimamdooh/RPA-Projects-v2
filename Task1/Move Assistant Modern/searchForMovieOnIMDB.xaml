@@ -126,7 +126,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="searchForMovieOnIMDB" sap:VirtualizedContainerService.HintSize="1452,2817" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="searchForMovieOnIMDB" sap:VirtualizedContainerService.HintSize="955,2817" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,7 +216,7 @@
                 </uix:NGetText.Target>
               </uix:NGetText>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,177" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[out_writers]" />
-              <Assign sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign DisplayName="split the writer names" sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="s:String[]">[arrWriters]</OutArgument>
                 </Assign.To>
@@ -248,7 +248,7 @@
               </ui:MultipleAssign>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,177" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[out_firstName]" />
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,177" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[out_secName]" />
-              <Assign sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign DisplayName="assign all var in dict" sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[out_movieData]</OutArgument>
                 </Assign.To>
