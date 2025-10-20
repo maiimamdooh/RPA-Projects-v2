@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="612i2uk8oka6IStqYt2DkA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="editorial.rottentomatoes.com/guide/best-movies-21st-century" CVScreenId="b55cae7a-5dfa-475b-816d-efa354e831c1" DesignTimeRectangle="8, -627, 943, 34539" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*' idx='1' /&gt;" Guid="f5e390da-54f9-4b15-98ae-1ff66b9acab8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='100 Greatest Movies of the 21st Century | Rotten Tomatoes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7ed17077e7b90fd36bc0f8ab46d979d7.png" xmlns="">0VfgYjC1pPkid9pMQh4xsiw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

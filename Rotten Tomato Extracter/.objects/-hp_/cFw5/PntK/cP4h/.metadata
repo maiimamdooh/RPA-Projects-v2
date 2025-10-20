@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Parasite",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "cP4hakJAREKPSvpXogJ1_g",
+  "Reference": "GWdsvmk0JkyUKUQK_w8_aQ/cP4hakJAREKPSvpXogJ1_g",
+  "ParentRef": "GWdsvmk0JkyUKUQK_w8_aQ/PntKla58KEmVAfF9RQrTaQ",
+  "Created": "2025-10-20T16:58:15.9085657Z",
+  "Updated": "2025-10-20T16:58:15.9085657Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
