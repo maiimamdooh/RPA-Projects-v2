@@ -99,13 +99,13 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="openAcme" sap:VirtualizedContainerService.HintSize="518,629" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="openAcme" sap:VirtualizedContainerService.HintSize="1350,647.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="518,606" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="home page" sap:VirtualizedContainerService.HintSize="518,606" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
