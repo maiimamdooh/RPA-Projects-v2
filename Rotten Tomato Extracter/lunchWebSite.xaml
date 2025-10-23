@@ -110,7 +110,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="lunchWebSite" sap:VirtualizedContainerService.HintSize="1319,1449" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="lunchWebSite" sap:VirtualizedContainerService.HintSize="600,1392" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="1" Name="currentIndex" />
       <Variable x:TypeArguments="x:Int32" Name="noOfMovies" />
@@ -136,15 +136,15 @@
         <InArgument x:TypeArguments="x:Int32">[1]</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome 100 Greatest Movies of the 21st Centur" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,1076" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b631002d-e226-4dc1-8ca6-b1536f168762" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome 100 Greatest Movies of the 21st Centur" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,1019" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b631002d-e226-4dc1-8ca6-b1536f168762" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[currentIndex &lt;= noOfMovies]" DisplayName="While" sap:VirtualizedContainerService.HintSize="452,835" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+          <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[currentIndex &lt;= noOfMovies]" DisplayName="While" sap:VirtualizedContainerService.HintSize="452,778" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
             <ui:InterruptibleWhile.Body>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,736" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,679" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="moviesName" />
                   <Variable x:TypeArguments="x:String" Name="Years" />
@@ -192,7 +192,7 @@
                     <InArgument x:TypeArguments="x:Int32">[currentIndex + 1]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_4">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[out_allMovies]</OutArgument>
                   </Assign.To>
@@ -200,24 +200,6 @@
                     <InArgument x:TypeArguments="x:String">[moviesName +Years+ Environment.NewLine+out_allMovies]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                  <ui:CommentOut.Body>
-                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[out_allMovies]" />
-                    </Sequence>
-                  </ui:CommentOut.Body>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:CommentOut>
               </Sequence>
             </ui:InterruptibleWhile.Body>
           </ui:InterruptibleWhile>
