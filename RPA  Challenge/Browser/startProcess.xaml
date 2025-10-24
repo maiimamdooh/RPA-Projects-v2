@@ -98,14 +98,14 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="startProcess" sap:VirtualizedContainerService.HintSize="603,2955" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="startProcess" sap:VirtualizedContainerService.HintSize="1241,2875" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="590,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start start process&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="590,2591" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="590,2511" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -113,13 +113,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="588,2109" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="588,2029" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="554,2049" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_retryNo]" RetryInterval="[in_retryTime]">
+          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="554,1969" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_retryNo]" RetryInterval="[in_retryTime]">
             <ui:RetryScope.ActivityBody>
               <ActivityAction>
                 <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="552,1851" sap2010:WorkflowViewState.IdRef="Sequence_6">
@@ -191,7 +191,11 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="99701558-8996-4ee1-a513-4c321c1c06ee" Version="V5">
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="rpachallenge.com" CVScreenId="a0432c5d-ba2a-47e3-952f-a41741569559" ContentHash="kGpCrjNhB0ONWP9kLAuXGw" CvElementArea="17, 662, 191, 58" CvTextArea="89, 685, 45, 13" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 665, 188, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="6af78e0f-085d-4fe2-8694-6df3ad56638a" InformativeScreenshot="47c5e594edea7f82124a077c71dd038b.png" Reference="LcF6c7vyxUKHxWjjdANv3Q/7WNcFtPoREK3_O7qYcR9wQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                <uix:TargetAnchorable BrowserURL="rpachallenge.com" CVScreenId="a0432c5d-ba2a-47e3-952f-a41741569559" ContentHash="m8QxhoGryUy_Uv6EKKkJbg" CvElementArea="17, 662, 191, 58" CvTextArea="89, 685, 45, 13" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 855, 454, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="6af78e0f-085d-4fe2-8694-6df3ad56638a" InformativeScreenshot="979706a19ae6b167e79ba0c29fdddef1.png" Reference="LcF6c7vyxUKHxWjjdANv3Q/7WNcFtPoREK3_O7qYcR9wQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset X="4" Y="4" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
                               </uix:NClick.Target>
                               <uix:NClick.VerifyOptions>
                                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -292,7 +296,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="554,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[New SystemException(&quot;...&quot;)]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="554,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[New SystemException(&quot;page not loded correct as button not found&quot;)]" />
               <Rethrow sap:VirtualizedContainerService.HintSize="554,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
             </Sequence>
           </ActivityAction>

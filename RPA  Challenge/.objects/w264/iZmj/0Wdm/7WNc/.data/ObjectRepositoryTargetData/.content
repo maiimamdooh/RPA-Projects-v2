@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="kGpCrjNhB0ONWP9kLAuXGw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="m8QxhoGryUy_Uv6EKKkJbg" Reference="LcF6c7vyxUKHxWjjdANv3Q/7WNcFtPoREK3_O7qYcR9wQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com" CVScreenId="a0432c5d-ba2a-47e3-952f-a41741569559" CvElementArea="17, 662, 191, 58" CvTextArea="89, 685, 45, 13" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 665, 188, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="6af78e0f-085d-4fe2-8694-6df3ad56638a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="47c5e594edea7f82124a077c71dd038b.png" xmlns="">0Cv0SopygAUCELI5aK3eR-w</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com" CVScreenId="a0432c5d-ba2a-47e3-952f-a41741569559" CvElementArea="17, 662, 191, 58" CvTextArea="89, 685, 45, 13" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 855, 454, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="6af78e0f-085d-4fe2-8694-6df3ad56638a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="4" Y="4" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="979706a19ae6b167e79ba0c29fdddef1.png" xmlns="">0d9IRaD8_2UmTGZd1mj4xeQ</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
